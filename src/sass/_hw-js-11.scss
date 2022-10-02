@@ -43,11 +43,15 @@ button {
     justify-content:center;
     gap: 30px;
 }
-
+.photo-card {
+    border: 1px, solid, #000;
+    background-color: rgba(150, 150, 150, 0.386);
+}
 .photo-card__img {
     width: 327.5px;
     height: 230px;
 }
+
 
 .info {
     display: flex;
