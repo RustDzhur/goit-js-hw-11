@@ -5,6 +5,7 @@ body {
 .container {
     width: 1400px;
     margin: 0 auto;
+    text-align: center;
 }
 .header {
     height: 80px;
@@ -29,7 +30,7 @@ body {
     outline: none;
 }
 
-button {
+button[type="submit"] {
     position: absolute;
     right: 0;
     height: 100%;
@@ -46,6 +47,7 @@ button {
 .photo-card {
     border: 1px, solid, #000;
     background-color: rgba(150, 150, 150, 0.386);
+    margin-bottom: 40px;
 }
 .photo-card__img {
     width: 327.5px;
@@ -57,4 +59,17 @@ button {
     display: flex;
     justify-content: space-around;
     text-align: center;
+}
+
+.load-more{
+    display: none;
+}
+
+.active {
+    display: inline-block;
+    padding: 15px 70px;
+    margin-bottom: 50px;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(71, 71, 70);
 }
