@@ -35,7 +35,7 @@ function onSearchResult(e) {
 }
 const options = {
   API_KEY: 'key=30083397-78010dc0c03f4e3cc974487c6',
-  per_page: 200,
+  per_page: 40,
   orientation: 'orientation=horizontal',
   image_type: 'image_type=photo',
   safesearch: 'safesearch=true',
