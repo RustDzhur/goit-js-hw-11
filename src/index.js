@@ -69,7 +69,6 @@ async function onAxiosGetValue() {
       "We're sorry, but you've reached the end of search results."
     );
     refs.loadMore.classList.remove('active');
-    refs.loadMore.classList.remove('active');
   }
 }
 
