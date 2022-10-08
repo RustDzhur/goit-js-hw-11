@@ -46,7 +46,8 @@ async function onAxiosGetValue() {
           'Sorry, there are no images matching your search query. Please try again.'
         );
         refs.loadMore.classList.remove('active');
-      } else if (response.data.hits.length !== 0) {
+      } 
+      if (response.data.hits.length !== 0) {
         Notiflix.Notify.info(
           `Hooray! We found ${response.data.totalHits} images.`
         );
@@ -54,6 +55,12 @@ async function onAxiosGetValue() {
         PAGE += 1;
         refs.loadMore.classList.add('active');
         lightbox.refresh();
+      }
+      if (response.data.hits.length < options.per_page) {
+        Notiflix.Notify.failure(
+            "We're sorry, but you've reached the end of search results."
+          );
+          refs.loadMore.classList.remove('active');
       }
       
     } catch (error) {
